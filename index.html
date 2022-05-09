@@ -1,12 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>HELLO WORLD</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ufuk Can Kurt</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon2.ico" />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <!-- <body data-spy="scroll" data-target="#mainNav"> -->
+  <body data-spy="scroll" >
+    <!--Go to top Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="go-to-top-icon fa fa-arrow-up"></i>
+    </button>
+    <!--Whatsapp Web-->
+
+        <div id="mobil-menu">
+          <div class="left">
+            <ul id="mobile-links-ul">
+              <li class="mobil-links"><a href="#home">ANASAYFA</a></li>
+              <li class="mobil-links"><a href="#about">HAKKIMDA</a></li>
+              <li class="mobil-links"><a href="#education">EĞİTİM</a></li>
+              <li class="mobil-links"><a href="#events">ETKİNLİKLER</a></li>
+              <li class="mobil-links"><a href="#docker">DOCKER</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <p>Follow Me</p>
+            <div class="social-media">
+              <div class="social-item">
+                <a href=""
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="social-item">
+                <a href=""
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            
+            <p>Contact Me</p>
+              <div class="social-media">
+                <div class="social-item">
+                  <a href=""
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                  ></a>
+                </div>
+                <div class="social-item">
+                  <a href=""
+                    ><i class="fa fa-phone" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+           
+          </div>
+          
+        </div>
+
+        <div class="menu-icon" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+    <!--Navigation-->
+    <nav id="mainNav" class="fixed-top">
+      <div class="containers">        
+
+        <div class="link-content">
+          <ul>
+            <li class="links"><a href="#home">ANASAYFA</a></li>
+            <li class="links"><a href="#about">HAKKIMDA</a></li>
+            <li class="links"><a href="#education">EĞİTİM</a></li>
+            <li class="links"><a href="#events">ETKİNLİKLER</a></li>
+            <li class="links"><a href="#docker">DOCKER</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/ufukcankurt_/?hl=tr">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/ufukcankurt_">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/ufukcankurt/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/ufukcankurt">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/ufukcankurt">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="mailto:ufuk.cnk@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Master Head-->
+    <section class="masthead" id="home">
+      <div id="mastheadBg"></div>
+     <div class="mastheadPhoto">
+       <img src="../assets/img/uck.png" alt="">
+     </div>
+     <div class="mastheadInfo">
+       <h2 class="bigName">Ufuk Can KURT</h2>
+       <p class="desc">Software Engineer</p>
+       <span class="title">ŞUAN:</span><span class="info"> JavaScript teknolojilerini öğreniyorum.</span>
+       <br/>
+       <span class="title">EĞİTİM:</span><span class="info"> Pamukkale Üniversitesi</span>
+       <br/>
+       <span class="title">ŞEHİR:</span><span class="info"> Denizli</span>
+     </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="second-section">
+      <div class="containers">
+        <div class="text-content text-center">
+          <h2 class="sec-heading text-uppercase">Hakkımda</h2>
+          <h3 class="sec-subheading">
+          </h3>
+        </div>
+        <div class="item-content text-center">
+          <div class="card">
+            <p class="icon-text">
+              Merhabalar, <br/>
+              Ben Bilgisayar Mühendisliği son sınıf öğrencisiyim. Şu anda kendimi Frontend alanında JavaScript, React.js, Next.js gibi teknolojiler üzerine geliştiriyorum. <br/> Kitap okumayı ve spor yapmayı seviyorum.
+            </p>
+          </div>
+        </div>
+       <div class="jobContainer">
+        <div class="text-content text-center">
+          <h2 class="sec-heading text-uppercase">DENEYİM</h2>
+          <h3 class="sec-subheading">
+          </h3>
+        </div>
+        <div class="item-content text-center">
+          <div class="jobCard">
+            <div class="jobLeft">
+              <p class="title">Başlangıç</p>
+              <p class="info">Ekim 2020</p>
+              <p class="title">Bitiş</p>
+              <p class="info">Aralık 2020</p>
+              <p class="status">(2 Ay)</p>
+            </div>
+            <div class="jobRight">
+              <p class="title">Frontend Developer</p>
+              <p class="subtitle">Technoone Yazılım Sistemleri Ltd.Şti.</p>
+              <p class="info">Bu süreçte HTML & CSS alanında kendimi geliştirdim. JavaScript bilgisi kazandım. Aynı zamanda ilk defa ofis ortamında çalışma tecrübesi edindim.</p>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="experience-section" >
+      <div class="containers">
+        <div class="text-content text-center">
+          <h2 class="sec-heading text-uppercase">EĞİTİM</h2>
+          <h3 class="sec-subheading">
+            Detay görmek için fotoğraflara tıklayabilirsiniz.
+          </h3>
+        </div>
+
+        <div class="row exp-list">
+          
+          <div class="exp-content col-lg-4 col-md-6 col-sm-6 " data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="250"
+          data-aos-duration="400">
+            <div class="exp-item" data-target="#modal2">
+              <img src="assets/img/ugal.jpg" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInUp">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Universitatea "Dunărea de Jos" Galați</h3>
+              <h4 class="experience-caption-subheading">Erasmus +</h4>
+              <h4 class="experience-caption-subheading">2020 - 2021 | 6 Ay</h4>
+            </div>
+          </div>
+          <div class="exp-content col-lg-4 col-md-6 col-sm-6" data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="250"
+          data-aos-duration="300">
+            <div class="exp-item" data-target="#modal1">
+              <img src="assets/img/paü.jpg" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInLeft">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Pamukkale Üniversitesi</h3>
+              <h4 class="experience-caption-subheading">Lisans Eğitimi</h4>
+              <h4 class="experience-caption-subheading">2017 - Şuan</h4>
+            </div>
+          </div>
+          <div class="exp-content col-lg-4 col-md-6 col-sm-6 " data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="250"
+          data-aos-duration="500">
+            <div class="exp-item" data-target="#modal3">
+              <img src="assets/img/ysgal.png" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInRight">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Yaşar Saniye Gemici Anadolu Lisesi</h3>
+              <h4 class="experience-caption-subheading">Lise Eğitimi</h4>
+              <h4 class="experience-caption-subheading">2013 - 2017 | 4 Yıl</h4>
+              <h4 class="experience-caption-subheading"></h4>
+            </div>
+          </div>
+          <!-- <div class="exp-content col-lg-4 col-md-6 col-sm-6 " data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="100"
+          data-aos-duration="300">
+            <div class="exp-item" data-target="#modal4">
+              <img src="assets/img/galery/z_4.jpg" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInLeft">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Title</h3>
+              <h4 class="experience-caption-subheading">Subtitle</h4>
+            </div>
+          </div> -->
+          <!-- <div class="exp-content col-lg-4 col-md-6 col-sm-6 " data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="100"
+          data-aos-duration="400">
+            <div class="exp-item" data-target="#modal5">
+              <img src="assets/img/galery/z_5.jpg" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInUp">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Title</h3>
+              <h4 class="experience-caption-subheading">Subtitle</h4>
+            </div>
+          </div> -->
+          <!-- <div class="exp-content col-lg-4 col-md-6 col-sm-6" data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-offset="100"
+          data-aos-duration="500">
+            <div class="exp-item" data-target="#modal6">
+              <img src="assets/img/galery/z_6.jpg" alt="" />
+              <div class="exp-hover-div animate__animated animate__fadeInRight">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </div>
+            </div>
+            <div class="experience-caption">
+              <h3 class="experience-caption-heading">Title</h3>
+              <h4 class="experience-caption-subheading">Subtitle</h4>
+            </div>
+          </div> -->
+      </div>
+
+      <div id="modal1" class="animate__animated animate__fadeInLeft experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">Pamukkale Ünİversİtesİ</h2>
+          <h3 class="experience-modal-subheading">
+            <!-- Lorem ipsum dolor sit amet consectetur. -->
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/paü.jpg" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>2017 yılında başladığım üniversite eğitiminin ilk yılında İngilizce hazırlık okudum. 2018 yılında Mühendislik Fakültesi'nde Bilgisayar Mühendisliği bölümüne başladım. Şu an itibariyle son sınıf öğrencisiyim.</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal1">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+
+      <div id="modal2" class="animate__animated animate__fadeInUp experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">Universitatea "Dunărea de Jos" Galați</h2>
+          <h3 class="experience-modal-subheading">
+            <!-- Lorem ipsum dolor sit amet consectetur. -->
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/ugal.jpg" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>2020 - 2021 Bahar Dönemindeki eğitimimi Romanya'nın Galati şehrinde bulunan Universitatea "Dunărea de Jos" Galați üniversitesinde Bilgisayar Mühendisliği bölümünde aldım. 6 aylık bu süreçte yeni yerleri, yeni insanları, yeni kültürleri tanıma fırsatı bulduğum için çok mutluyum.</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal2">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+
+      <div id="modal3" class="animate__animated animate__fadeInRight experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">Yaşar Saniye Gemici Anadolu Lisesi</h2>
+          <h3 class="experience-modal-subheading">
+            <!-- Lorem ipsum dolor sit amet consectetur. -->
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/ysgal.png" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>2013 - 2017 yılları arasındaki lise eğitimimi  Denizli'nin Bağbaşı mevkisinde bulunan Yaşar Saniye Gemici Anadolu Lisesi'nde tamamladım.</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal3">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+
+      <div id="modal4" class="animate__animated animate__fadeInLeft experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">PROJECT NAME</h2>
+          <h3 class="experience-modal-subheading">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/galery/z_4.jpg" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis natus vero eius pariatur officiis quas, veritatis, adipisci rem omnis amet iste odit accusantium architecto! Possimus nemo praesentium odio consectetur saepe!</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal4">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+
+      <div id="modal5" class="animate__animated animate__fadeInUp experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">PROJECT NAME</h2>
+          <h3 class="experience-modal-subheading">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/galery/z_5.jpg" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis natus vero eius pariatur officiis quas, veritatis, adipisci rem omnis amet iste odit accusantium architecto! Possimus nemo praesentium odio consectetur saepe!</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal5">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+      
+      <div id="modal6" class="animate__animated animate__fadeInRight experience-modal">
+        <div class="experience-text-content text-center">
+          <h2 class="experience-modal-heading text-uppercase">PROJECT NAME</h2>
+          <h3 class="experience-modal-subheading">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3>
+        </div>
+        <div class="experience-modal-img">
+          <img src="./assets/img/galery/z_6.jpg" alt="">
+        </div>
+        <div class="experience-modal-caption">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis natus vero eius pariatur officiis quas, veritatis, adipisci rem omnis amet iste odit accusantium architecto! Possimus nemo praesentium odio consectetur saepe!</p>
+        </div>
+        <div class="experience-modal-close" data-target="#modal6">
+          <img src="./assets/img/close-icon.svg" alt="Close modal">
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="third-section">
+      <div class="containers">
+        <div class="text-content text-center">
+          <h2 class="sec-heading text-uppercase">KATILDIĞIM ETKİNLİKLER & EĞİTİMLER  </h2>
+          <h3 class="sec-subheading">
+            <!-- Click on the photo to see in more detail -->
+          </h3>
+        </div>
+
+        <div class="item-content text-center">
+          <div class="thirdCards">
+            <div class="textCard">
+              <p class="desc">
+                Üniversitenin en başından itibaren <a href="https://www.instagram.com/pausiber/?hl=tr">PaüSiber</a> 'in içerisinde yer aldığım için çok mutluyum. Tüm bu zaman boyunca birbirinden değerli insanları tanıma fırsatı buldum. Bu dört yıl süresince, birbirinden güzel etkinlikler düzenledik ve birbirinden güzel eğitimlere katıldık.  Onlardan bazılarını buraya bırakıyorum. 🎉🥳
+              </p>
+            </div>
+            <div class="infoCard">
+              <p class="thirdTitle">
+              # Önyüz Programlama Eğitimi - HTML/CSS/JS - 2022 - Eğitmen
+              </p>
+              <div class="thirdItem">
+                <img src="/assets/img/etk_1.jpg" alt="">
+                <img src="/assets/img/etk_2.jpg" alt="">
+              </div>
+            </div>
+            <div class="infoCard">
+              <p class="thirdTitle">
+              # Özgür Yazılım Kış Kampı - Önyüz Programlama - 2020/Eskişehir
+              </p>
+              <div class="thirdItem">
+                <img src="/assets/img/etk_3.jpg" alt="">
+                <img src="/assets/img/etk_4.jpg" alt="">
+              </div>
+            </div>
+            <div class="infoCard">
+              <p class="thirdTitle">
+              # GDG DEVFEST İzmir - 2019
+              </p>
+              <div class="thirdItem">
+                <img src="/assets/img/etk_5.jpg" alt="">
+                <img src="/assets/img/etk_6.jpg" alt="">
+              </div>
+            </div>
+            <div class="infoCard">
+              <p class="thirdTitle">
+              # WTK '18 - PHP KONF '19
+              </p>
+              <div class="thirdItem">
+                <img src="/assets/img/etk_7.jpg" alt="">
+                <img src="/assets/img/etk_8.jpg" alt="">
+              </div>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Docker-->
+    <section id="docker" class="fourth-section">
+      <div class="containers">
+        <div class="text-content text-center">
+          <h2 class="sec-heading text-uppercase" >DOCKER</h2>
+          <!-- <h3 class="sec-subheading">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3> -->
+        </div>
+
+        <div class="dockerContent">
+          <div class="dockerCard">
+            <p class="dockerTitle">Docker Nedir?</p>
+            <p class="dockerDesc">Docker en net tanımlamayla open source bir ‘container’ teknolojisidir. Docker, aynı işletim sistemi üzerinde, yüzlerce hatta binlerce birbirinden izole ve bağımsız containerlar sayesinde sanallaştırma sağlayan bir teknolojidir. Web uygulamalarımızın kolayca kurulumunu, testini, çalışmasını ve deploymentını sağlar. Bunun yanında sunucu maliyetlerini önemli ölçüde azaltır.</p>
+            <img class="dockerCardImg" src="/assets/docker/docker_00.png" alt="">
+          </div>
+          <div class="dockerCard">
+            <p class="dockerTitle">Docker nasıl çalışır?</p>
+            <p class="dockerDesc">Docker, kodunuzu çalıştırmanın standart bir yolunu sağlayarak çalışır. Docker, container'lara yönelik bir işletim sistemidir. Bir sanal makinenin sunucu donanımını sanallaştırmasına (doğrudan yönetme gereksinimini ortadan kaldırma) benzer şekilde container'lar da bir sunucunun işletim sistemini sanallaştırır. Docker her sunucuya yüklenir ve container'ları oluşturmak, başlatmak veya durdurmak için kullanabileceğiniz basit komutlar sağlar.</p>
+            <img class="dockerCardImg" src="/assets/docker/docker_05.png" alt="">
+          </div>
+          <div class="dockerNextTitle">
+            Docker Temel Bileşenleri
+          </div>
+
+        </div>
+
+
+        <ul class="timeline">
+          <li>
+            <!-- <div class="timeline-image">
+              <img src="" alt="" />
+            </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>1. Docker Engine</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  <span class="boldText"></span>
+                  <span class="boldText">Docker Engine (DE)</span>, ana makineye kurulur ve Docker sisteminin çekirdeğini temsil eder. Bir çalışma zamanı sistemi, kapsayıcıları oluşturan ve yöneten temeldeki istemci-sunucu teknolojisidir. <br/>
+                  Docker Engine üç bileşenden oluşur: <br/>
+                  <span class="boldText">Sunucu:</span> Kapsayıcıların oluşturulmasından ve yönetilmesinden sorumlu olan Docker arka plan programı (dockerd).  <br/>
+                  <span class="boldText">Rest API:</span> Programlar ve Docker arasında iletişim kurar ve dockerd’a ne yapması gerektiğini söyler.  <br/>
+                  <span class="boldText">Komut Satırı Arabirimi (CLI):</span> Docker komutlarını çalıştırmak için kullanılır.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <!-- <div class="timeline-image inverted-photo">
+              <img src="" alt="" />
+            </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2. Docker Görüntüleri (Docker Images)</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  <span class="boldText">Docker görüntüleri</span> kapsayıcı oluşturmak için kullanılan şablonlardır. Sanal makineler için anlık görüntüler gibi, Docker görüntüleri değişmez kaynak kodu, kitaplıkları, bağımlılıkları, araçları ve bir uygulamayı çalıştırmak için gerekli diğer dosyalardan oluşan salt okunur dosyalardır. Her görüntü, belirli bir Docker görüntüsü oluşturmak için özel yönergeler içeren bir Docker dosyasından oluşturulur. <br/>
+                  Dockerfiles’den Docker görüntüleri oluşturma konusunda uzmanlaştıktan sonra, görüntüleri ve özel kapsayıcıları daha basit ve daha hızlı oluşturabilirsiniz. <br/>
+                  Docker, derlemelerini hızlandırmanın yanı sıra, görüntüler yeniden kullanılabilirliği artırmak ve disk kullanımını azaltmak için de kullanışlıdır. 
+                </p>
+              </div>
+            </div>
+          </li>
+          <li >
+            <!-- <div class="timeline-image">
+              <img src="" alt="" />
+            </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>3. Dockerfile</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  <span class="boldText">Dockerfile,</span> Docker görüntüsünün nasıl oluşturulacağına ilişkin bir dizi talimattan oluşan bir komut dosyasıdır. Bu yönergeler, işletim sistemini, dilleri, ortam değişkenlerini, dosya konumlarını, ağ bağlantı noktalarını ve görüntüyü çalıştırmak için gereken diğer bileşenleri belirtmeyi içerir. Dosyadaki tüm komutlar otomatik olarak gruplanır ve yürütülür. <br/>
+
+                  Bir görüntünün birden çok katmanı vardır. Kapsayıcı oluşturmak için bir Docker görüntüsü çalıştırdığınızda, yeni bir okuma-yazma katmanı eklenir. Bu bazen konteyner katmanı olarak adlandırılır. Ek katman, gelecekte kullanmak üzere yeni bir Docker görüntüsü oluşturmayı taahhüt edebileceğiniz temel görüntüde değişiklik yapmanıza olanak tanır.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted" >
+            <!-- <div class="timeline-image inverted-photo">
+              <img src="" alt="" />
+            </div> -->
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>4. Docker Hub</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  <span class="boldText">Docker Hub,</span> Docker tarafından sağlanan en büyük bulut tabanlı konteyner görüntüleri deposudur. Açık kaynaklı projeler, yazılım satıcıları ve Docker topluluğu tarafından oluşturulan 100.000’den fazla görüntüyü kullanıma sunar. <br/>
+
+                  Platform, uygulamalarınızı herhangi bir yere hızlı bir şekilde göndermenize, ekip arkadaşlarınızla işbirliği yapmanıza ve bir geliştirme hattına daha hızlı entegrasyon için derlemeleri otomatikleştirmenize olanak tanır. <br/>
+
+                  GitHub gibi, geliştiriciler konteyner görüntülerini Docker Hub’dan alır ve bunları herkese açık mı yoksa özel mi tutacaklarına karar verir.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="dockerLastCard">
+          <p class="dockerLastTitle">Docker neden kullanılmalı?</p>
+          <div class="dockerLastContent">
+            <div class="dockerLastItem">
+              <img src="/assets/docker/docker_1.png" alt="" class="dockerLastImg">
+              <p class="dockerLastSubtitle">DAHA KISA SÜREDE DAHA FAZLA YAZILIM SUNUN</p>
+              <p class="dockerLastText">Docker kullanıcıları, Docker kullanmayanlardan ortalama 7 kat daha sık uygulama sunuyor. Docker, gereken sıklıkta yalıtılmış hizmetler sunmanıza imkan tanır.</p>
+            </div>
+            <div class="dockerLastItem">
+              <img src="/assets/docker/docker_2.png" alt="" class="dockerLastImg">
+              <p class="dockerLastSubtitle">İŞLEMLERİ STANDARTLAŞTIRIN</p>
+              <p class="dockerLastText">Küçük container'lı uygulamalar dağıtım yapmayı, sorunları belirlemeyi ve düzeltme için geri almayı kolaylaştırır.</p>
+            </div>
+            <div class="dockerLastItem">
+              <img src="/assets/docker/docker_3.png" alt="" class="dockerLastImg">
+              <p class="dockerLastSubtitle">SORUNSUZ ŞEKİLDE TAŞIYIN</p>
+              <p class="dockerLastText">Docker temelli uygulamalar yerel geliştirme makinelerinden AWS'deki üretim dağıtımlarına sorunsuz bir şekilde taşınabilir.</p>
+            </div>
+            <div class="dockerLastItem">
+              <img src="/assets/docker/docker_4.png" alt="" class="dockerLastImg">
+              <p class="dockerLastSubtitle">TASARRUF EDİN</p>
+              <p class="dockerLastText">Docker container'ları her sunucuda daha fazla kod çalıştırmanızı kolaylaştırarak kullanımınızı geliştirir ve tasarruf etmenizi sağlar.</p>
+            </div>
+          </div> 
+        </div>
+        <p class="dockerSource">Docker-Kaynak: [<a target="_blank" href="https://medium.com/batech/docker-nedir-docker-kavramlar%C4%B1-avantajlar%C4%B1-901b37742ee0">1</a>][<a target="_blank" href="https://aws.amazon.com/tr/docker/">2</a>][<a target="_blank" href="https://bulutistan.com/blog/docker-nedir/">3</a>]</p>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <div class="containers">
+        <p class="copyright">UFUK CAN KURT | computer science by Ufuk Can Kurt</p>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

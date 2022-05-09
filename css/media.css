@@ -1,0 +1,354 @@
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1500px) {
+    .experience-modal .experience-modal-caption{
+        padding: 1% 5%;
+    }
+}
+@media (max-width: 1300px) {
+    .experience-modal .experience-modal-caption{
+        padding: 2% 2%;
+    }
+
+    .experience-modal{
+        padding: 3rem 13rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .experience-modal{
+        padding: 3rem 10rem;
+    }
+
+    .second-section .containers .item-content .card .icon-text{
+        padding: 10px 70px;
+    }
+
+    .fourth-section .containers .timeline > li{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .fourth-section .containers .timeline > li .timeline-image{
+        left: 70%;
+    }
+
+    .inverted-photo {
+        left: 28% !important;
+    }
+
+    .fourth-section .containers .timeline::before{
+        left: 18%;
+    }
+
+    .fifth-section .containers .item-content .price-card .price-title{
+        font-size: 1.3rem;
+    }
+
+    .fifth-section .containers .item-content .price-card .price-value{
+        font-size: 1.1rem;
+    }
+
+    footer .foot-text{
+        margin-right: 40px;
+    }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+    .experience-modal .experience-text-content .experience-modal-heading{
+        font-size: 2.8rem;
+    }
+
+    .experience-modal{
+        padding: 3rem 5rem;
+    }
+
+    #mobil-tel{
+        display: none;
+        top: 0;
+        left: 45%;
+    }
+
+    #wp-web{
+        display: none;
+        top: 0px;
+        left: 55%;
+    }
+
+    .link-content{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .masthead .masthead-subheading{
+        font-size: 2rem;
+    }
+
+    .masthead .masthead-heading{
+        font-size: 3.5rem;
+    }
+
+    .second-section .containers .item-content .card .icon-text{
+        padding: 10px 40px;
+    }
+
+    .fourth-section .containers .timeline > li .timeline-image{
+        left: 14%;
+    }
+
+    .inverted-photo {
+        left: 14% !important;
+    }
+
+    .fourth-section .containers .timeline::before{
+        left: 2%;
+    }
+
+    .fourth-section .containers .timeline > li .timeline-panel{
+        padding: 0 20px 20px 20px;
+        width: 60%;
+        margin-right: -200px;
+    }
+
+    .fourth-section .containers .timeline > li.timeline-inverted > .timeline-panel{
+        padding: 0 20px 20px 20px;
+        width: 60%;
+        margin-right: -200px;
+    }
+
+    .fifth-section .containers .item-content .price-card{
+        width: calc(33.33333% - 24px);
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    
+    .experience-modal .experience-text-content .experience-modal-heading{
+        font-size: 2.6rem;
+    }
+
+    .experience-modal .experience-text-content .experience-modal-subheading{
+        font-size: 0.9rem;
+    }
+
+    .experience-modal .experience-modal-img{
+        width: 95%;
+        height: 53%;
+    }
+
+    .experience-modal{
+        padding: 3rem 1.5rem;
+    }
+
+    .masthead .masthead-subheading{
+        font-size: 1.6rem;
+    }
+
+    .masthead .masthead-heading{
+        font-size: 2.8rem;
+    }
+
+    .second-section .containers .item-content .card{
+        width: calc(100% - 24px);
+    }
+
+    .box-menu ul li{
+        font-size: 16px;
+        padding: 10px 17px;
+    }
+
+    .fourth-section .containers .timeline::before{
+        left: -2%;
+    }
+
+    .fifth-section .containers .item-content .price-card{
+        width: calc(50% - 24px);
+    }
+
+    .sixth-section .containers .content .right{
+        display: none;
+    }
+
+    .sixth-section .containers .content .left .medium-title{
+        margin: 0 auto;
+    }
+
+    footer .foot-text{
+        margin-right: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .experience-modal-close{
+        top: 0.6rem;
+        right: 0.8rem;
+        width: 2.1rem;
+    }
+    
+    li.mobil-links a{
+        font-size: 1.7rem;
+    }
+
+    #mobil-menu .right p{
+        font-size: 1.7rem;
+    }
+
+    #mobil-menu .right .social-item a{
+        font-size: 35px;
+    }
+
+    .experience-modal .experience-text-content .experience-modal-heading{
+        font-size: 2.6rem;
+    }
+
+    #myBtn{
+        padding: 8px;
+        font-size: 10px;
+        bottom: 50px;
+        right: 25px;
+    }
+
+    .sec-heading{
+        font-size: 2rem;
+    }
+
+    .big-button{
+        padding: 1rem 2rem;
+    }
+
+    .second-section .containers .item-content .card .icon-text {
+        padding: 10px;
+    }
+
+    .box-menu ul li {
+        font-size: 15px;
+        padding: 7px 10px;
+    }
+
+    .fourth-section .containers .timeline > li{
+        flex-direction: column;
+    }
+
+    .fourth-section .containers .timeline > li .timeline-image{
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .fourth-section .containers .timeline > li .timeline-panel{
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .fourth-section .containers .timeline > li.timeline-inverted > .timeline-panel{
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .fifth-section .containers .item-content .price-card .price-title{
+        font-size: 1.2rem;
+    }
+
+    .fifth-section .containers .item-content .price-card .price-value{
+        font-size: 1rem;
+    }
+
+    .sixth-section .containers .content .left .name-subject-div{
+        flex-direction: column;
+    }
+
+    .sixth-section .containers .content .left .name-subject-div .form-row{
+        width: 100%;
+    }
+
+    footer .containers .foot-card {
+        width: calc(50% - 24px);
+        margin: 15px 12px 10px 12px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    li.mobil-links a{
+        font-size: 1.6rem;
+    }
+
+    #mobil-menu .right p{
+        font-size: 1.6rem;
+    }
+
+    #mobil-menu .right .social-item a{
+        font-size: 33px;
+    }
+
+    .experience-modal .experience-text-content .experience-modal-heading{
+        font-size: 2.2rem;
+    }
+
+    .footer-bottom .containers, .footer-bottom .containers a{
+        font-size: 13px;
+    }
+
+    .experience-modal .experience-modal-caption p{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    li.mobil-links a{
+        font-size: 1.5rem;
+    }
+
+    #mobil-menu .right p{
+        font-size: 1.5rem;
+    }
+
+    #mobil-menu .right .social-item a{
+        font-size: 30px;
+    }
+
+    .experience-modal .experience-text-content .experience-modal-heading{
+        font-size: 1.9rem;
+    }
+
+    .experience-modal .experience-text-content .experience-modal-subheading {
+        font-size: 0.8rem;
+    }
+
+    footer .containers .foot-card {
+        width: calc(95% - 24px);
+        margin: 15px 12px 10px 12px;
+    }
+
+    .footer-bottom .containers, .footer-bottom .containers a{
+        font-size: 10px;
+    }
+
+    
+}
+
+@media (max-width: 350px) {
+    li.mobil-links a{
+        font-size: 1.4rem;
+    }
+
+    #mobil-menu .right p{
+        font-size: 1.4rem;
+    }
+
+    #mobil-menu .right .social-item a{
+        font-size: 27px;
+    }
+}
